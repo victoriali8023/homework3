@@ -1,0 +1,115 @@
+body{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 100%;
+	background-image: url("../images/pidgeon-background.jpg");
+	background-repeat: no-repeat;
+	background-color: #dddddd;
+	margin-left: 20px;
+	margin-bottom: 0;
+	/*Quicksand font (you will need to use a Google Fonts link) with sans-serif fallback
+	Page background should use the provided image as a non-repeating background
+	with a fallback color of light grey (#dddddd)*/
+}
+h1{
+	font-size: 2em;
+	color: #c12258;
+	line-height: 1.5;
+	/*Header 1 should be 2em, each line should be 1.5 height, and dark red (#c12258)*/
+}
+p{
+	color: black;
+    font-size: 18px;
+    padding-top: 15px;
+	/*Paragraphs should be “black”, 18px, with 15px of padding on the top only*/
+}
+a:link{
+	font-size: 18px;
+	color: #c12258;
+	text-decoration: underline;
+	/*Links should be 18px, dark red (#c12258), with an underline*/
+}
+a:focus{
+	outline: none;
+	border: 1px solid red;
+	/*Focused elements should have a 1px “red” border (make sure you format
+parameters as ‘px, weight, color’ order)*/
+}
+table{
+	border: 2px solid black;
+	border-radius: 10px;
+	border-collapse: separate;
+	border-spacing: 0;
+	/*Table has 2px black border (make sure you format parameters as ‘px, weight,
+color’ order)*/
+}
+
+.colhead{
+	min-width: 150px;
+	width: auto;
+	padding: 10px;
+	color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #7e0830;
+	/*Column headers are always at least 150px wide, with 10px of padding. 
+	Column header text is white, centered, and uppercase with a dark red background (#7e0830).*/
+}
+thead th:first-child{
+	border-top-left-radius: 10px;
+}
+thead th:last-child{
+	border-top-right-radius: 10px;
+}
+tbody tr:last-child td:last-child{
+	border-bottom-right-radius: 10px;
+}
+tbody tr:last-child th{
+	border-bottom-left-radius: 10px;
+}
+td{
+	text-align: center;
+	border-top: 2px solid black;
+	padding: 15px;
+	/*Table cells have centered text with a 2px black border on only one side
+	and 15px padding on all sides*/
+}
+.rowhead{
+	border-top: 2px solid black;
+	/*Row headers have a 2px black border that matches the rest of the rows.*/
+}
+tr:nth-child(even){
+	background-color: #dddddd;
+	/*Every even numbered table row has a grey background (#dddddd)
+	every add table row has a transparent background.*/
+}
+tr:nth-child(odd){
+	background-color: transparent;
+	/*Every even numbered table row has a grey background (#dddddd)
+	every add table row has a transparent background.*/
+}
+tr:hover{
+	background-color: #fab9cf;
+	/*Hovering over a row changes the background color to light red (#fab9cf).*/
+}
+footer p{
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+	/*Footer has “white” text on a “black” background
+    Is always located at the bottom of the browser window, no matter how small the
+    page content is. (this may take more than one line of code)
+    Footer is always at least 60px tall.*/
+}
+footer{
+	position: fixed;
+	background-color: black;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: auto;
+	margin-left: 20px;
+	margin-bottom: 0；
+	min-height: 60px;
+	height: auto;
+}
+
